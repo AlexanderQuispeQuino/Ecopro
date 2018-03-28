@@ -1,0 +1,150 @@
+body{
+	margin: 0;
+
+
+}
+
+
+ .contenedor{
+	
+	
+	margin: auto;
+	position: relative;
+	background-color: black;
+	width: 100%;
+}
+
+.slider{
+	
+	width: 1518px;
+}
+
+
+.footer{
+	background: #273b47;
+	height: 45px;
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	
+}
+
+.footer .contenedor{
+	display: flex;
+	justify-content: space-around;
+}
+
+.social-incons {
+color: white;
+
+display: flex;
+align-items: center;
+
+}
+
+
+.incon-li{
+color: white;
+
+font-size: 24px;
+
+}
+
+.flex-incons{
+display: flex;
+justify-content: space-around;	
+height: 45px;
+
+}
+
+
+
+.contacto{
+	
+    
+	color: white;
+	font-size: 14px;
+
+	
+}
+
+.flex-contacto{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 45px;
+
+}
+
+
+
+.contacto a{
+	color: white;
+	text-decoration: none;
+	
+
+} 
+
+.menu{
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+
+	right: 0;
+}
+ 
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.menu li::after{
+
+	content: '|';
+	
+	line-height: 20px;
+	color: white;
+
+
+}
+
+
+
+
+
+
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0;
+
+}
+
+
+.portada{
+	
+	color: white;
+	padding: 0;
+	height:10px;
+
+
+}
+.header{
+	position: relative;
+}
+
+/* @media screen and (max-height: 650px){
+
+	
+body{
+	margin: 0;
+
+
+}
+} */
