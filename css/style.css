@@ -1,6 +1,12 @@
+
+.html{
+	height: 707px;
+}
+
 body{
 	margin: 0;
 	width: 1517px;
+	height: 707px;
 
 
 }
@@ -9,30 +15,34 @@ body{
  .contenedor{
 	
 	
-	margin: auto;
+	margin: 0;
 	position: relative;
 	background-color: black;
-	width: 100%;
+	width: 1517px;
+	height: 47px;
 }
 
 .slider{
 	
-	width: 1518px;
+	width: 1517px;
+	height: 661px;
+	
 }
 
 
 .footer{
 	background: #273b47;
-	height: 45px;
+	height: 47px;
 	position: absolute;
 	width: 100%;
 	margin: auto;
 	
+	
 }
 
-.footer .contenedor{
+ .contenedor{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .social-incons {
@@ -40,6 +50,8 @@ color: white;
 
 display: flex;
 align-items: center;
+
+height: 45px
 
 }
 
@@ -53,8 +65,9 @@ font-size: 24px;
 
 .flex-incons{
 display: flex;
-justify-content: space-around;	
+justify-content: center;
 height: 45px;
+align-items: center;
 
 }
 
@@ -65,15 +78,18 @@ height: 45px;
     
 	color: white;
 	font-size: 14px;
+	width: 360px;
+
 
 	
 }
 
 .flex-contacto{
 	display: flex;
-	justify-content: space-around;
+	justify-content:center;
 	align-items: center;
-	height: 45px;
+	height: 45px; 
+	font-family: 'Dosis', sans-serif;
 
 }
 
@@ -138,6 +154,21 @@ height: 45px;
 }
 .header{
 	position: relative;
+}
+
+.footer-logo{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.footer-logo img{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+	margin-top: 8px;
 }
 
 /* @media screen and (max-height: 650px){
