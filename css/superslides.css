@@ -269,9 +269,7 @@ height: 45px;
 
 }
 
-body{
-   border: 3px solid red;
-}
+
 
 .contacto{
   
@@ -302,6 +300,10 @@ body{
   
 
 } 
+  .flex-incons .social-incons ul{
+padding-left: 10px;
+
+}
 
 
 }
