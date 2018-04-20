@@ -207,3 +207,101 @@ height: 45px;
  
  /*  width: 100%; */
 }
+
+
+
+@media screen and (max-width:494px ) {
+
+
+
+  .connect {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    margin-left: 0;
+    padding: 0 0 0 30px;
+    background: rgba(0, 0, 0,0.5);
+/*  &::after {
+    $bgsize: 5px,
+    $bgpoint: 20%,
+    $bgcolor: rgba(white,.1)
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image:
+      radial-gradient(
+        $bgcolor $bgpoint,
+        transparent $bgpoint
+      );
+    background-size: $bgsize $bgsize;
+  }
+    */
+    display: flex;
+    align-items: baseline;
+
+}
+  
+.social-incons {
+color: white;
+
+display: inline-block;
+align-items: center;
+
+}
+
+
+a  .incon-li{
+color: white;
+
+font-size: 20px;
+
+}
+
+.flex-incons{
+display: inline-block;
+justify-content: space-around;  
+height: 45px;
+
+}
+
+body{
+   border: 3px solid red;
+}
+
+.contacto{
+  
+    
+  color: white;
+  font-size: 10px;
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+
+
+  
+}
+
+.flex-contacto{
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  width: 1438px;
+
+}
+
+
+
+.contacto a{
+  color: white;
+  text-decoration: none;
+  
+
+} 
+
+
+}
