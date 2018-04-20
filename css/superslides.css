@@ -67,7 +67,7 @@
   height: 40px;
   font-size:30px;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -107,6 +107,60 @@
 }
 
 
+.contenedor-menu, .nav-menu li{
+  display: flex;
+  color: white;
+  text-decoration: none;
+  justify-content: space-around;
+      justify-content: flex-end;
+}
+
+
+.nav-menu ul{
+  display: flex;
+   justify-content: space-around
+  
+  
+}
+
+
+.nav-menu {
+  display: flex;
+  margin-right: 160px;
+   background: rgba(0, 0, 0, 0.3);
+  
+}
+
+.menu {
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    margin-top: 334px;
+    padding:  0 ;
+    background: rgba(0, 0, 0,0.8);
+    display: flex;
+}
+
+.nav-menu a{
+ margin-right: 50px;
+
+  display: flex;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+   font-family: 'Dosis', sans-serif;
+   font-size: 18px;
+ 
+  
+
+} 
+
+.logotipo{
+    margin: 0 0px 0px 100px;
+    background: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -118,7 +172,7 @@
     margin: 0;
     margin-left: 0;
     padding: 0 0 0 30px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0,0.6);
 /*  &::after {
     $bgsize: 5px,
     $bgpoint: 20%,
@@ -209,7 +263,6 @@ height: 45px;
 }
 
 
-
 @media screen and (max-width:494px ) {
 
 
@@ -275,7 +328,7 @@ height: 45px;
   
     
   color: white;
-  font-size: 8.5px;
+  font-size: 10px;
   display: inline-block;
   font-family: 'Dosis', sans-serif;
 
@@ -300,10 +353,29 @@ height: 45px;
   
 
 } 
-  .flex-incons .social-incons ul{
+.flex-incons .social-incons ul{
+
+
 padding-left: 10px;
 
 }
 
+
+}
+
+
+
+@media screen and (max-width:379px) {
+
+  body{
+    border: 2px solid black;
+  }
+
+.flex-incons .social-incons ul{
+
+
+padding-left: 10px;
+
+}
 
 }
