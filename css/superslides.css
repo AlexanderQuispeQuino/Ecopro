@@ -457,15 +457,18 @@ padding-left: 10px;
     display: inline-flex;
     margin: 0;
     background: rgba(0, 0, 0, 0);
+  }
 
-   
+  .logotipo img{
+    width: 100%;
+    height: 100%;
   }
 
 
   .contenedor-menu{
     display: flex;
     justify-content: space-around;
-    padding-top: 54px;
+    /* padding-top: 54px; */
   }
 
 .nav-menu{
