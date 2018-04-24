@@ -18,8 +18,9 @@
 	
 </head>
 <body>
-
-	<div class="menu">
+	<span class="burguer-button icon-menu" id="burguer-button"></span>
+	<div class="menu" id="menu">
+	
 
 			<div class="menu-logo">
 				
@@ -69,7 +70,7 @@
 	</div>
 	
 
-	<div id="slides">
+	<div id="slides" class="">
 		<ul class="slides-container">
 			<li><img src="img/01.jpg" alt=""></li>
 			<li><img src="img/02.jpg" alt=""></li>
@@ -129,11 +130,22 @@
 			</div>
 		
 	</div>
+	<script>
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+
+      $burguerButton.addEventListener('touchstart', toggleMenu);
+
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+    </script>
 
 	
 </body>
 
 <footer class="slides-pagination-footer">
+
 	
 </footer>
 </html>

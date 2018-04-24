@@ -1,3 +1,45 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?6s6d3k');
+    src:    url('../fonts/icomoon.eot?6s6d3k#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?6s6d3k') format('truetype'),
+        url('../fonts/icomoon.woff?6s6d3k') format('woff'),
+        url('../fonts/icomoon.svg?6s6d3k#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+    content: "\e900";
+}
+.icon-phone:before {
+    content: "\e901";
+}
+.icon-menu:before {
+    content: "\e902";
+}
+.icon-close:before {
+    content: "\e903";
+}
+--------------------------------------------------------------------
+
+
+
 #slides {
   position: relative;
 
@@ -263,7 +305,24 @@ height: 45px;
 }
 
 
-@media screen and (max-width:494px ) {
+
+.burguer-button {
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  height: 40px;
+  background: #395667;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index:17 ;
+}
+
+
+@media screen and (max-width:500px ) {
 
 
 
@@ -360,14 +419,85 @@ padding-left: 10px;
 
 }
 
+  .menu {
+    background: rgba(0, 0, 0, .8);
+   
+    left: -100%;
+    top: 0;
+    z-index: 15;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transition: .3s;
+    margin-top: 0px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu.active {
+    left: 0;
+  }
 
+  .contenedor-menu .nave-menu ul {
+    flex: 1;
+   
+  }
+
+  .menu-logo{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+  }
+
+ .logotipo{
+    
+    display: inline-flex;
+    margin: 0;
+    background: rgba(0, 0, 0, 0);
+
+   
+  }
+
+
+  .contenedor-menu{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 54px;
+  }
+
+.nav-menu{
+  margin: 0px;
+  background: rgba(0, 0, 0, 0);
+
+}
+.nav-menu li{
+  justify-content: space-around;
+  margin-bottom: 8px;
+  padding-left: 40px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.nav-menu ul{
+  display: inline-block;
+  padding:  0;
+ 
+}
+
+.nav-menu a{
+  font-size: 20px;
 }
 
 
 
-@media screen and (max-width:379px) {
+}
 
-  body{
+
+/* 
+ @media screen and (max-width:352px) {
+
+  html{
     border: 2px solid black;
   }
 
@@ -378,4 +508,51 @@ padding-left: 10px;
 
 }
 
+
+
+
+
+
+
+.nav-menu {
+  display: flex;
+  margin-right: 160px;
+   background: rgba(0, 0, 0, 0.3);
+  
 }
+
+.menu {
+    
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    margin-top: 250px;
+    padding:  0 ;
+    background: rgba(0, 0, 0,0.8);
+    display: flex;
+}
+
+.nav-menu a{
+ margin-right: 50px;
+
+  display: flex;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+   font-family: 'Dosis', sans-serif;
+   font-size: 18px;
+ 
+  
+
+} 
+
+.logotipo{
+    margin: 0 0px 0px 100px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+}  */
