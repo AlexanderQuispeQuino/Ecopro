@@ -1,0 +1,123 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+
+
+  .modal-dialog{
+    width: 1500px;
+  }
+
+  div.modal-body-formulario{
+    width: 300px;
+    height: 500px;
+    z-index: 5;
+    position: fixed;
+    padding-top: 300px;
+    padding-left: 100px;
+   
+
+  }
+  div.body-formulario{
+    
+    background-color: white;
+    width:280px;
+    border:5px solid #5cb85c;
+    padding: 15px;
+
+
+  }
+  .formulario{
+    margin: 5px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Login Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+
+         
+                    <div class="modal-body-formulario" >
+                      <div class="body-formulario">
+                          <form role="form" class="formulario" >
+                            <div class="form-group">
+                              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Nombre(s)</label>
+                              <input type="text" class="form-control" id="usrname" placeholder="Enter nombre">
+                            </div>
+                             <div class="form-group">
+                              <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+                              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                             <div class="form-group">
+                              <label for="usrname"><span class="glyphicon glyphicon-pencil"></span> Asunto</label>
+                              <input type="text" class="form-control" id="usrname" placeholder="Enter asunto">
+                            </div>
+                            <div class="form-group">
+                              <label for="psw"><span class="glyphicon glyphicon-comment"></span> Mensaje</label>
+                              <textarea type="text" class="form-control" id="psw" placeholder="Enter mensaje"></textarea> 
+                            </div>
+                           <!--  <div class="checkbox">
+                              <label><input type="checkbox" value="" checked>Remember me</label>
+                            </div> -->
+                              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Enviar Mensaje</button>
+                          </form>
+                      </div>
+                    </div>
+                    
+
+
+
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>CONTACTO</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4296067224794!2d-77.04961874067911!3d-12.062876392622885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8ddeb4e18cb%3A0x1b98055a44b59ec0!2sJir%C3%B3n+Gral+Varela+1532%2C+Cercado+de+Lima+15083!5e0!3m2!1ses!2spe!4v1526077500591" width="1400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+         
+        </div>
+        <div class="modal-footer">
+         <!--  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p> -->
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+
+
+
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+</html>

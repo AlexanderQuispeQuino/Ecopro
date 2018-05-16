@@ -160,7 +160,8 @@
 
 .nav-menu ul{
   display: flex;
-   justify-content: space-around
+   justify-content: space-around;
+   cursor: pointer;
   
   
 }
@@ -189,7 +190,8 @@
  margin-right: 50px;
 
   display: flex;
-  color: white;
+  color: #fbcb0f;
+  /*f5e737*/
   text-decoration: none;
   align-items: center;
    font-family: 'Dosis', sans-serif;
@@ -200,8 +202,19 @@
 } 
 
 .logotipo{
-    margin: 0 0px 0px 100px;
+    margin: 0 0px 0px 140px;
     background: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 150px;
+}
+
+figure.logotipo{
+  background-color: rgba(0,0,0,0.9);
+}
+
+.logotipo img{
+  width: 400px;
+  height: 150px;
 }
 
 
@@ -300,6 +313,8 @@ height: 45px;
 .contenedor-footer{
  
   position: relative;
+  padding-top: 9px;
+  height: 50px;
  
  /*  width: 100%; */
 }
@@ -319,6 +334,10 @@ height: 45px;
   left: 20px;
   top: 20px;
   z-index:17 ;
+}
+
+div.menu-logo{
+  height: 113px;
 }
 
 
@@ -450,6 +469,7 @@ padding-left: 2px;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
+
   }
 
  .logotipo{

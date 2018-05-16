@@ -1,0 +1,298 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: black;
+  }
+
+  .modal-dialog{
+    width: 1435px;
+  }
+
+
+img{
+    width: 300px;
+    height: 180px;
+   
+  }
+
+  .clientes{
+    display: flex;
+   flex-wrap: wrap;
+   align-content: space-between;
+
+
+  }
+
+  .clientes{
+    padding: inherit;
+
+  }
+
+  .modal-body-clientes{
+    width: 1435px;
+  }
+
+
+----------------------------------------
+
+ span {
+  margin-left: 1em;
+  color: #aaa;
+  font-size: 85%;
+}
+.column {
+  margin: 15px 15px 0;
+  padding: 0;
+}
+/*.column:last-child {
+  padding-bottom: 60px;
+}*/
+.column::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.column figure {
+  position: relative;
+  float: left;
+  
+  height: 180px;
+  margin: 0 0 0 25px;
+  padding: 0;
+}
+.column div:first-child {
+  margin-left: 0;
+}
+.column div span {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  opacity: 0;
+}
+
+
+figure {
+ width: 300px;
+ height: 180px; 
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+figure:hover+span {
+  bottom: -36px;
+  opacity: 1;
+  z-index: 5px;
+}
+
+
+/* Circle */
+.clientes figure {
+  position: relative;
+}
+.clientes figure ::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.3);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.clientes figure :hover::before {
+  -webkit-animation: circle .75s;
+  animation: circle .75s;
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+
+/* Opacity #2 */
+.clientes figure {
+  background: #1abc9c;
+}
+.clientes figure img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.clientes figure:hover img {
+  opacity: .5;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Login Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-user"></span> CLIENTES</h4>
+        </div>
+        <div class="modal-body-clientes" style="padding:40px ;">
+         
+
+        <div class="clientes column">
+          <div>
+          
+            <figure>
+              <a href="http://cmslsa.com/"><img src="img/logos/1_Mesa de trabajo 1.jpg" alt=""></a>
+              
+            </figure> 
+             <span>Hover</span> 
+        </div>
+          <figure>
+            <a href="https://www.ecopetrol.com.co/wps/portal/es"><img src="img/logos/2_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/3_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/4_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+           
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/6_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+            <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/8_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+             <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/5_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/7_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>  
+          
+          <figure> 
+
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/9_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/14_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure> 
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/11_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/12.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/13_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/10_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+           <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/15_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+          <figure>
+           <a href="https://www.ecopetrol.com.co/wps/portal/es"> <img src="img/logos/16_Mesa de trabajo 1.jpg" alt=""></a>
+          </figure>
+
+
+
+        </div>
+
+
+
+        </div>
+        <div class="modal-footer" >
+         <!--  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p> -->
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+
+
+
+ 
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+</html>
